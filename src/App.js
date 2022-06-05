@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
+
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Home from "./Components/Home"
+import About from "./Components/About"
+
+
+import Navbaar from './Components/Navbaar';
+import CarRental from './Components/CarRental';
+import Vacation from './Components/Vacation';
+import Footer from './Components/Footer';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      
+      <Navbaar/>
+      
+        
+      <Routes>
+    
+      
+          <Route exact path="/travelknowledge-web" element={<Home/>} />
+          <Route exact path="/flights" element={<About/>} />
+          
+          <Route exact path="/car-rental" element={<CarRental/>} />
+          <Route exact path="/vacation" element={<Vacation/>} />
+
+          
+         
+        
+      </Routes>
+      <Footer/>
+      
+  
+
+
+     
     </div>
   );
 }
