@@ -25,7 +25,7 @@ function App() {
       <Routes>
     
       
-          <Route exact path="/travelknowledge-web" element={<Home/>} />
+          <Route exact path="/travelknowledge-webReactJs" element={<Home/>} />
           <Route exact path="/flights" element={<About/>} />
           
           <Route exact path="/car-rental" element={<CarRental/>} />

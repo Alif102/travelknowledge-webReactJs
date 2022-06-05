@@ -58,7 +58,7 @@ const Navbaar = () => {
            <li className="nav-item">
              <NavLink
                exact
-               to="/travelknowledge-web"
+               to="/travelknowledge-webReactJs"
                activeClassName="active"
                className="nav-links"
                onClick={click ? handleClick : null}
